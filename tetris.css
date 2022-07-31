@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+
+}
+#game {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid blue;
+    
+
+}
+#game-board {
+    width: 300px;
+    height: 600px;
+    margin-right: 10px;
+}
+#info {
+    width: fit-content;
+    height: fit-content;
+}
+#score-board {
+    
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+}
+#score-board br {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
