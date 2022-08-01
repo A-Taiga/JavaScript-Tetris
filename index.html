@@ -5,31 +5,34 @@
     <title>TETRIS</title>
 </head>
 <body>
-    <div id="game">
-        <div id="game-board">
-            <canvas id="game-area" width="300" height="600"></canvas>
-        </div>
-        <div id="info">
-            <div id="score-board"></div>
-            <canvas id="next-block" width="200" height="200"></canvas>
-            
-            <div id="controls">
-                <p>Controls</p>
-                <br>
-                <p>Rotate = ↑</p>
-                <br>
-                <p>Increase Drop Speed = ↓</p>
-                <br>
-                <p>Right = →</p>
-                <p>Drop Block immediately = Spacebar</p>
+    <div id="container">
+        <div id="game">
+            <div id="game-board">
+                <canvas id="game-area" width="300" height="600"></canvas>
+            </div>
+            <div id="info">
+                <div id="score-board"></div>
+                <div id="next-block-container">
+                    <canvas id="next-block" width="200" height="200"></canvas>
+                </div>
+                <div id="controls">
+                    <p>Controls</p>
+                    <br>
+                    <p>Rotate = ↑</p>
+                    <br>
+                    <p>Increase Drop Speed = ↓</p>
+                    <br>
+                    <p>Right = →</p>
+                    <br>
+                    <p>Drop Block immediately = Spacebar</p>
+                </div>
             </div>
         </div>
-        
-       
-
     </div>
-    <div id="name"><p>Created by <a href="https://github.com/A-Taiga">Anthony Polka</a></p></div>
-
+    <div id="name-container">
+        <div id="name"><p>Created by <a href="https://github.com/A-Taiga">Anthony Polka</a></p></div>
+    </div>
+    
     <script src="tetris.js"></script>
 </body>
 </html>

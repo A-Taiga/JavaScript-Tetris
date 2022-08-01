@@ -2,57 +2,57 @@ body {
     margin: 0;
 
 }
-#game {
+#container {
     margin: auto;
-    margin-top: 20px;
-    display: flex;
     width: fit-content;
     height: fit-content;
-    border: 1px solid blue;
-    
-
+    border: 1px solid red;
+}
+#game {
+   
+    width: fit-content;
+    height: 600px;
+    display: -webkit-box;
 }
 #game-board {
-    width: fit-content;
     width: 300px;
     height: 600px;
-    margin-right: 10px;
 }
+
 #info {
-    padding: 10px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#score-board {
-    margin:auto;
-    width: 200px;
-    height: 100px;
-    font-size: 30px;
-}
-#score-board br {
-    margin: 0px;
-    padding: 0px;
-    display: block;
-}
-#name {
-    text-align: center;
-}
-#next-block {
-    margin-left: -100px;
-    margin-top: -50px;
-}
-#controls {
     width: fit-content;
-    margin: auto;
-    text-align: center;
-    margin-top: 200px;
-    
-}
-#controls :nth-child(n+2) {
-    text-align: left !important;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
+#score-board {
+    font-size: 20px;
+    text-align: center;
+
+}
+#next-block-container{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+#controls{
+    padding: 3px;
+    text-align: center;
+
+
+}
+#controls :nth-child(n+2) {
+    text-align: left;
+   
+}
 #controls br {
-    margin: -10px;
+    margin-bottom: 1rem;
     display: block;
+    content: " ";
+}
+#name-container {
+    width: fit-content;
+    margin: auto;
+   
 }
