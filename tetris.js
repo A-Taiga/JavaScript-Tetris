@@ -206,7 +206,19 @@ function displayNextBlock(next) {
     for(let r = 0; r < tet.length; r++) {
         for(let c = 0; c < tet.length; c++) {
             if(tet[r][c]) {
-                drawBlock(r+2,c+2,TETROMINOS[next][1],nctx);
+                
+                nctx.beginPath();
+                if(next !== 5 && next !== 6) {
+                    nctx.rect(c*30+60,r*30+50,30,30);
+                } else {
+                    nctx.rect((c*30)+(tet.length*30)/3,r*30+(tet.length*30)/3,30,30);
+                }
+                nctx.fillStyle = TETROMINOS[next][1];
+                nctx.lineWidth = 2;
+                nctx.fill();
+                nctx.strokeStyle = 'black';
+                nctx.stroke();
+
             }
         }
     }
