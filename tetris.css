@@ -35,3 +35,8 @@ body {
     padding: 0px;
     display: block;
 }
+#name {
+    text-align: center;
+    margin: auto;
+
+}
