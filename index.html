@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="tetris.css">
-    
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <title>TETRIS</title>
 </head>
 <body>
-    <div id="container">
-        <div id="game">
-            <div id="game-board">
-                <canvas id="game-area" width="300" height="600"></canvas>
-            </div>
-            <div id="info">
-                <div id="score-board"></div>
-                <div id="next-block-container">
+    <div id="start">
+        <div>
+            <p>Press start to begin</p>
+        </div>
+        <button id="start-button">Start</button>
+    </div>
+    <div id="outer-container">
+        <div id="inner-container">
+            <canvas id="game-board" width="300" height="600"></canvas>
+            <div id="info-area">
+                <div id="score-board">
+                    <p>Score</p>
+                    <p>0</p>
+                </div>
+                <div id="next-block-wrapper">
                     <canvas id="next-block" width="200" height="200"></canvas>
                 </div>
                 <div id="controls">
                     <p>Controls</p>
                     <br>
-                    <p>Rotate = ↑</p>
+                    <p>Drop block faster: ↓</p>
                     <br>
-                    <p>Increase Drop Speed = ↓</p>
+                    <p>Move right: →</p>
                     <br>
-                    <p>Right = →</p>
+                    <p>Move left: ←</p>
                     <br>
-                    <p>Drop Block immediately = Spacebar</p>
+                    <p>Rotate: ↑</p>
+                    <br>
+                    <p>Drop immediately: spacebar</p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="name-container">
-        <div id="name"><p>Created by <a href="https://github.com/A-Taiga">Anthony Polka</a></p></div>
+    <div id="name">
+        <P>Create by <a href="https://github.com/A-Taiga">Anthony Polka</a>
+        </P>
     </div>
-    
-    <script src="tetris.js"></script>
+    <script src="start.js"></script>
+    <script src="tetrominos.js"></script>
+    <script src="index.js"></script>
+    <script src="gameOver.js"></script>
 </body>
 </html>
