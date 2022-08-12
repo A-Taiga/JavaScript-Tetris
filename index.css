@@ -13,6 +13,7 @@ body{
     min-width: 500px;
     
 }
+
 #start div {
     width: fit-content;
     height: fit-content;
@@ -20,9 +21,6 @@ body{
     position: absolute;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
- 
-
-
 }
 
 #start-button {
@@ -49,6 +47,36 @@ body{
     height: fit-content;
     display: flex;
 }
+#stats-container {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: 1px solid black;
+}
+
+#stats-container div {
+    width: 150px;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+
+#stats-container p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+#stat-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.tets {
+    display: block;
+}
+
 #info-area {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;

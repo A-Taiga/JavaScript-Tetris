@@ -88,16 +88,16 @@ function initGameBoard() {
     }
 }
 
-function drawBrick(path,x,y,lineWidth,color,strokeColor,ctx) {
+function drawBrick(path,x,y,lineWidth,color,strokeColor,ctx,cell=CS) {
     
-    ctx.transform(1,0,0,1,CS*x,CS*y);
+    ctx.transform(1,0,0,1,cell*x,cell*y);
     ctx.fillStyle = color;
     ctx.lineWidth = 2;
     ctx.fill(path);
     ctx.lineWidth = lineWidth;
     ctx.strokeStyle = strokeColor;
     ctx.stroke(path);
-    ctx.transform(1,0,0,1,-CS*x,-CS*y);
+    ctx.transform(1,0,0,1,-cell*x,-cell*y);
 }
 
 
@@ -118,6 +118,7 @@ function drawBoard() {
         }
     }
 }
+
 
 
 
@@ -251,6 +252,7 @@ Tetromino.prototype.update = function() {/////////////////////////////UPDATE
                 }
             }
         }
+        updateStat(this.tet);
         checkBoard();
         currentTetromino = createTet(this.next);
         drawBoard();
@@ -416,9 +418,10 @@ function main() {
 
 
 
-
 initGameBoard();
 drawBoard();
+
+
 
 
 

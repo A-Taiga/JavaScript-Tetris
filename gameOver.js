@@ -24,8 +24,7 @@ function gameOverScreen() {
     button.textContent = 'Restart';
     button.style.fontSize = '25px';
     button.onclick = function() {
-        speed = 500;
-        score = 0;
+        resetStats();
         gameOver = false;
         gameBoard = [];
         initGameBoard();

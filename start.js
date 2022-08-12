@@ -13,3 +13,4 @@ button.onclick = function() {
     document.body.removeChild(startScreen);
     requestAnimationFrame(main);
 }
+//document.body.removeChild(startScreen); //for testing
